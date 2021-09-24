@@ -10,12 +10,14 @@
 
 **文件说明**
 
-user.txt:类似数据库功能，存放已有的用户的用户名和密码，请把这个txt文件存放在你想要生成试卷文件夹的根目录下
+user.txt:类似数据库功能，存放已有的用户的用户名和密码，请把这个txt文件存放在你想要生成试卷文件夹的根目录下（默认为工程文件根目录）
 
-并且需要修改源码Main类中第一个常量：
+如果你需要修改试卷存放路径：
+
+需要修改源码Main类中第一个常量：
 
 ```java
-public static final String DIR ="C:\\Users\\VictoranusQ\\Desktop\\";
+public static final String DIR ="*****";
 ```
 
 例如：需要在桌面生成试卷文件夹，DIR需修改成"C:\\Users\\YourUsername\\Desktop\\"
