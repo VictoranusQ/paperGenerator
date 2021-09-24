@@ -26,7 +26,19 @@ public class PaperGenerator {
         String hour = Integer.toString(calendar.get(Calendar.HOUR_OF_DAY));
         String minute = Integer.toString(calendar.get(Calendar.MINUTE));
         String second = Integer.toString(calendar.get(Calendar.SECOND));
-        String papersDir = rootDir + year + "-" + month + "-" + day + "-" + hour + "-" + minute + "-" + second + ".txt";
+        String paperStage = new String();
+        switch (stage){
+            case 8848:
+                paperStage = "小学-";
+                break;
+            case 8849:
+                paperStage = "初中-";
+                break;
+            case 8850:
+                paperStage = "高中-";
+                break;
+        }
+        String papersDir = rootDir + paperStage + year + "-" + month + "-" + day + "-" + hour + "-" + minute + "-" + second + ".txt";
         try{
             FileWriter fileWriter = new FileWriter(papersDir,true);
             for (int i = 0;i<taskNum;i+=1){
