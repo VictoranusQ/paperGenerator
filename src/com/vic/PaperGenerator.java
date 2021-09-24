@@ -21,9 +21,9 @@ public class PaperGenerator {
         String rootDir = Main.DIR+username+"\\";
         Calendar calendar =Calendar.getInstance();
         String year = Integer.toString(calendar.get(Calendar.YEAR));
-        String month = Integer.toString(calendar.get(Calendar.MONTH));
-        String day = Integer.toString(calendar.get(Calendar.DATE));
-        String hour = Integer.toString(calendar.get(Calendar.HOUR));
+        String month = Integer.toString(calendar.get(Calendar.MONTH) + 1);
+        String day = Integer.toString(calendar.get(Calendar.DAY_OF_MONTH));
+        String hour = Integer.toString(calendar.get(Calendar.HOUR_OF_DAY));
         String minute = Integer.toString(calendar.get(Calendar.MINUTE));
         String second = Integer.toString(calendar.get(Calendar.SECOND));
         String papersDir = rootDir + year + "-" + month + "-" + day + "-" + hour + "-" + minute + "-" + second + ".txt";
