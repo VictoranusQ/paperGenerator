@@ -4,7 +4,9 @@
 
 读写文件的和输入检索的设计模块参考自CSDN博主HNUJSY：https://blog.csdn.net/HNUPCJ/article/details/109512724
 
+**运行说明**
 
+使用idea（建议）打开并运行main主类即可
 
 **文件说明**
 
