@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="paperGenerator:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/paperGenerator_jar</output-path>
+    <root id="archive" name="paperGenerator.jar">
+      <element id="module-output" name="paperGenerator" />
+    </root>
+  </artifact>
+</component>

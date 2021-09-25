@@ -6,6 +6,7 @@ import java.io.FileReader;
 import java.util.HashSet;
 
 public class History {
+
   public static HashSet<String> history(String username) {
     /**
      * @Author:VicHe

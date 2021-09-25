@@ -3,6 +3,7 @@ package com.vic;
 import java.util.List;
 
 public class Main {
+
   public static final String DIR = System.getProperty("user.dir") + "\\"; // 当前项目的根目录
 
   public static void main(String[] args) {

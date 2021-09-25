@@ -3,6 +3,7 @@ package com.vic;
 import java.util.Random;
 
 public class TaskGenerator {
+
   public static String generateTask(int stage) {
     /**
      * @Author:VicHe
@@ -10,9 +11,10 @@ public class TaskGenerator {
      * @Updatedate:2021/9/22
      */
     String task = new String();
+
     if (stage == 8848) { // 小学题目
       task = "";
-      String[] operators = new String[] {"+", "-", "*", "/"};
+      String[] operators = new String[]{"+", "-", "*", "/"};
       Random random = new Random();
       int digitNum =
           random.nextInt(3) + 3; // 数字个数随机在3-5个之间（也可以设置在0-5之间，下面加上了只有单个操作数时的判断，但有些单个数字的太简单了）
@@ -144,8 +146,8 @@ public class TaskGenerator {
 
     } else if (stage == 8849) { // 初中出题
       task = "";
-      String[] priOperators = new String[] {"+", "-", "*", "/"};
-      String[] midOperators = new String[] {"√", "^2"};
+      String[] priOperators = new String[]{"+", "-", "*", "/"};
+      String[] midOperators = new String[]{"√", "^2"};
       Random random = new Random();
       int digitNum =
           random.nextInt(3) + 3; // 数字个数随机在3-5个之间（也可以设置在0-5之间，下面加上了只有单个操作数时的判断，但有些单个数字的太简单了）
@@ -292,8 +294,8 @@ public class TaskGenerator {
       }
     } else if (stage == 8850) { // 高中出题
       task = "";
-      String[] operators = new String[] {"+", "-", "*", "/"};
-      String[] adOperators = new String[] {"tan", "sin", "cos"};
+      String[] operators = new String[]{"+", "-", "*", "/"};
+      String[] adOperators = new String[]{"tan", "sin", "cos"};
       Random random = new Random();
       int digitNum =
           random.nextInt(3) + 3; // 数字个数随机在3-5个之间（也可以设置在0-5之间，下面加上了只有单个操作数时的判断，但有些单个数字的太简单了）

@@ -3,6 +3,7 @@ package com.vic;
 import java.util.Scanner;
 
 public class DemandChecker {
+
   public static boolean isDigit(String strNum) {
     /**
      *  @Author:VicHe
@@ -74,4 +75,5 @@ public class DemandChecker {
     }
     return checkCode;
   }
+
 }
